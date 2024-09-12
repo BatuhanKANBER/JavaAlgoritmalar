@@ -1,4 +1,4 @@
-package LinkedLists;
+package LinkedList;
 //Linkedlist oluşturma
 
 public class Main {

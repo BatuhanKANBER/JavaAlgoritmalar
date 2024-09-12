@@ -1,4 +1,4 @@
-package LinkedLists;
+package LinkedList;
 
 public class ListBuilder {
     private Node head = null;
