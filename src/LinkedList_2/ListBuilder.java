@@ -75,7 +75,7 @@ public class ListBuilder {
             }
             first.next = node;
             node.next = second;
-            if (second == null) {
+            if (node.next == null) {
                 tail = node;
                 System.out.println("Zincirin sonuna yeni eleman eklendi; tail = " + tail.number);
             }
