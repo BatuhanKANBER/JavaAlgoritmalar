@@ -11,9 +11,12 @@ public class Main {
         listBuilder.addEnd(3);
         //listBuilder.addEnd(4);
         listBuilder.addAmong(1,28);
-        listBuilder.addAmong(2,28);
-        listBuilder.addAmong(4,34);
+        listBuilder.addAmong(3,28);
         listBuilder.addAmong(0,31);
+        listBuilder.addAmong(5,32);
+        listBuilder.addAmong(7,33);
+        listBuilder.addAmong(8,33);
+        listBuilder.addAmong(9,22);
         listBuilder.show();
         System.out.println("Zincirin başı: " + listBuilder.head.number);
         System.out.println("Zincirin sonu: " + listBuilder.tail.number);
