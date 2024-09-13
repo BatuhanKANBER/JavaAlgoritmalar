@@ -49,6 +49,28 @@ public class ListBuilder {
         }
     }
 
+    public void addAmong(int index, int x) {
+        int count = 0;
+        Node first = head;
+        while (count != index) { //İSTENİLEN İNDİSE GİT
+            first = first.next;
+            count++;
+        }
+        Node second = head;
+        count = 0;
+        while (count != index + 1) { //EKLENEN DÜĞÜMÜN NEXTINE GİT
+            second = second.next;
+            count++;
+        }
+        Node node = new Node();
+        node.number = x;
+        first.next = node;
+        node.next = second;
+        if (second == null){
+            tail = node;
+        }
+    }
+
     public void show() {
         if (head == null) {
             System.out.println("Oluşturulmuş bir zincir bulunamadı");
