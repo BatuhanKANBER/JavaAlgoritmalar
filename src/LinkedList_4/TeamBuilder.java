@@ -130,6 +130,29 @@ public class TeamBuilder {
         }
     }
 
+    public void remove(int x) {
+        Player temp = head;
+        Player beforePlayer = head;
+        if (head.number == x) {
+            head = head.next;
+            System.out.println(x + " numaralı oyuncu silindi.");
+        } else {
+            while (temp.next != null) {
+                beforePlayer = temp;
+                if (temp.next.number == x) {
+                    temp = temp.next;
+                    break;
+                }
+                temp = temp.next;
+            }
+            if (temp.number == x) {
+                beforePlayer.next = temp.next;
+                temp = null;
+                System.out.println(x + " numaralı oyuncu silindi.");
+            }
+        }
+    }
+
     public void show() {
         Player temp = head;
         System.out.println("FORMA NUMARASI | TAM ADI | POZİSYON | GOL SAYISI | ASİST SAYISI | G/A KATKISI");

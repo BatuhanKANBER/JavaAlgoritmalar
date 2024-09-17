@@ -16,6 +16,10 @@ public class Main {
         teamBuilder.show();
         teamBuilder.addForIndex(6);
         teamBuilder.show();
+        teamBuilder.remove(28);
+        teamBuilder.remove(0);
+        teamBuilder.remove(6);
+        teamBuilder.show();
 
     }
 }
