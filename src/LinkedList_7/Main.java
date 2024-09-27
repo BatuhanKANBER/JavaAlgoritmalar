@@ -13,5 +13,12 @@ public class Main {
         listBuilder.add(3,200);
         listBuilder.add(100,900);
         listBuilder.show();
+        listBuilder.remove(0);
+        listBuilder.show();
+        listBuilder.remove(6);
+        listBuilder.show();
+        listBuilder.remove(3);
+        listBuilder.show();
+
     }
 }

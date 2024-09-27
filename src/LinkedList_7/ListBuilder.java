@@ -4,6 +4,16 @@ public class ListBuilder {
     Node head;
     Node tail;
 
+    public int size() {
+        int count = 0;
+        Node temp = head;
+        do {
+            count++;
+            temp = temp.next;
+        } while (temp.next != head);
+        return count;
+    }
+
     public void add(int index, int x) {
         Node node = new Node();
         node.number = x;
@@ -43,6 +53,32 @@ public class ListBuilder {
                 node.next = temp;
                 System.out.println(index + ". index " + node.number + " olarak değiştirildi.");
             }
+        }
+    }
+
+    public void remove(int index) {
+        if (head == null) {
+            System.out.println("Listede herhangi bir düğüm bulunamadı.");
+        } else if (head != null && index == 0) {
+            tail.next = head.next;
+            head = head.next;
+            System.out.println("Head silindi yeni head: " + head.number);
+        } else if (size() <= index) {
+            Node temp = head;
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            temp.next = head;
+            tail = temp;
+            System.out.println("Tail silindi yeni tail: " + temp.number);
+        } else {
+            Node temp = head;
+            int count = 1;
+            while (count < index) {
+                count++;
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
         }
     }
 
