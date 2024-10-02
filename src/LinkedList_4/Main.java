@@ -1,5 +1,5 @@
 package LinkedList_4;
-
+//Bağlı liste örnek
 public class Main {
     public static void main(String[] args) {
         TeamBuilder teamBuilder = new TeamBuilder();

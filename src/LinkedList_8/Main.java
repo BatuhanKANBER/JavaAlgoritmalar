@@ -1,5 +1,5 @@
 package LinkedList_8;
-
+//Tek yönlü dairesel bağlı liste örnek
 public class Main {
     public static void main(String[] args) {
         Circle circle = new Circle();

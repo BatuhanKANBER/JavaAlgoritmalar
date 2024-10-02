@@ -1,5 +1,5 @@
 package LinkedList_9;
-
+//İki yönlü dairesel bağlı liste
 public class Main {
     public static void main(String[] args) {
         ListBuilder listBuilder = new ListBuilder();

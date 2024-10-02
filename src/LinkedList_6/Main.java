@@ -1,4 +1,5 @@
 package LinkedList_6;
+//İki yönlü doğrusal bağlı liste örnek
 
 public class Main {
     public static void main(String[] args) {
