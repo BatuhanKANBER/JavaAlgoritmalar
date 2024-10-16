@@ -1,4 +1,4 @@
-package BST;
+package BST_1;
 
 public class BinaryTree {
     Node root;
