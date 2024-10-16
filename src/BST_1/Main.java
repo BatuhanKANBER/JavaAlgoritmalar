@@ -1,4 +1,4 @@
-package BST;
+package BST_1;
 //İkili arama ağacı
 public class Main {
     public static void main(String[] args) {
