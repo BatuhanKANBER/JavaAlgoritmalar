@@ -1,12 +1,5 @@
-package BST_1;
-
+package BST;
 //İkili arama ağacı
-//      10
-//     /  \
-//    8   15
-//   /   /  \
-//  4   12   20
-
 public class Main {
     public static void main(String[] args) {
         BinaryTree binaryTree = new BinaryTree();
