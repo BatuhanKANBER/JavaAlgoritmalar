@@ -16,14 +16,14 @@ public class BinaryTree {
                     if (temp.left == null) {
                         temp.left = node;
                         System.out.println(node.data + " ağaca eklendi.");
-                        break;
+                        return;
                     } else
                         temp = temp.left;
                 } else {
                     if (temp.right == null) {
                         temp.right = node;
                         System.out.println(node.data + " ağaca eklendi.");
-                        break;
+                        return;
                     } else
                         temp = temp.right;
                 }
